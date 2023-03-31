@@ -19,7 +19,7 @@
     padding-right: 20px;
 }
 .body{
-    font-family: 'Comfortaa', 'cursive';
+    font-family: 'Comfortaa', cursive;
     color: var(--gray-color);
     font-size: 18px;
 }
