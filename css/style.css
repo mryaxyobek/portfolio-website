@@ -11,7 +11,7 @@
 .night-mode{
     --main-blue-color:#fff;
     --gray-color:#fff;
-    --header-bg-color:linear-gradient(90deg, hsla(199, 56%, 16%, 1) 0%, hsla(209, 100%, 9%, 1) 100%);;
+    --header-bg-color:linear-gradient(90deg, #123140 , #00182e);;
     --header-btn-second-text:inline-block ;
     --header-btn-first-text: none;
     --header-box-shadow: 0 0 0 2px #959595;
@@ -101,11 +101,12 @@ span{
 }   
 .header-title {
     font-size: 20px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Contrail One', cursive;
     color: #0594d1;
     line-height: 22px;
 }
 .header-title-wrapper-item {
+    font-size: 12px;
     font-weight: 400;
     color: var(--gray-color);
     opacity: 0.5;
@@ -143,6 +144,7 @@ span{
     border: none;
     border-bottom: var(--header-btn-border);
     border-radius: 8px;
+    transition: all 0.1s ease;
 }
 .header-btn:active{
     border-bottom: 0;
