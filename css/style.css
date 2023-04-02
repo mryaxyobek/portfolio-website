@@ -13,6 +13,13 @@
     --header-btn-border:3px solid #020035;
 
 }
+html{
+    cursor:url(../images/pointer-cursor.svg),default ;
+    scroll-behavior: smooth;
+}
+a,.header-btn{
+    cursor:url(../images/hand-cursor.svg),default ;
+}
 .night-mode{
     /* main color  */
     --main-blue-color:#fff;
