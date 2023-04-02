@@ -1,6 +1,11 @@
 :root{
+    /* main color  */
     --main-blue-color:#0594d1;
     --gray-color:#333;
+    /* scrollbar  */
+    --scrollbar-thumb-color:#717171;
+    --scrollbar-color:#dadada;
+    /* header */
     --header-bg-color: url(../images/header-bg-img.jpg);
     --header-btn-second-text: none;
     --header-btn-first-text: inline-block;
@@ -9,8 +14,13 @@
 
 }
 .night-mode{
+    /* main color  */
     --main-blue-color:#fff;
     --gray-color:#fff;
+    /* scrollbar  */
+    --scrollbar-thumb-color:#00a1e6;
+    --scrollbar-color:#072e4e;
+    /* header */
     --header-bg-color:linear-gradient(90deg, #123140 , #00182e);;
     --header-btn-second-text:inline-block ;
     --header-btn-first-text: none;
@@ -24,6 +34,17 @@
 }
 *::before,::after{
     box-sizing: inherit;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scrollbar-color);
+    margin-block: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,var(--scrollbar-thumb-color));
+    border-radius: 50px;
+    border: 2.5px solid var(--scrollbar-color);
 }
 .container{
     max-width: 1240px;
