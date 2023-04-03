@@ -227,6 +227,9 @@ span{
     border-radius: 20px;
     margin-left: auto;
 }
+.hero-parent-first-text{
+    margin-bottom: 20px;
+}
 .hero-title {
     font-family: 'Rubik', sans-serif;
     color: var(--main-blue-color);
