@@ -6,7 +6,7 @@
     --scrollbar-thumb-color:#717171;
     --scrollbar-color:#dadada;
     /* header */
-    --header-bg-color: url(../images/header-bg-img.jpg);
+    --header-bg-color: #fff;
     --header-btn-second-text: none;
     --header-btn-first-text: inline-block;
     --header-box-shadow: 0 2px 3px 0 #b7b7b7;
