@@ -11,6 +11,8 @@
     --header-btn-first-text: inline-block;
     --header-box-shadow: 0 0 3px 0 #b7b7b7;
     --header-btn-border:3px solid #020035;
+    /* hero  */
+    --hero-bg: #F1F3F2;
     /* my team  */
     --my-team-iteam-bg:#dfe5ec ;
 }
@@ -29,11 +31,13 @@ a,.header-btn{
     --scrollbar-thumb-color:#00a1e6;
     --scrollbar-color:#072e4e;
     /* header */
-    --header-bg-color:linear-gradient(90deg, #123140 , #00182e);;
+    --header-bg-color:#001121;
     --header-btn-second-text:inline-block ;
     --header-btn-first-text: none;
     --header-box-shadow: 0 0 0 2px #959595;
     --header-btn-border:3px solid #004866;
+    /* hero  */
+    --hero-bg:#001529;
     /* my team  */
     --my-team-iteam-bg:#00182e ;
 }
@@ -236,7 +240,7 @@ span{
 /* hero  */
 
 .hero-section{
-    background-image: url(../images/hero-bg-img.jpg );
+    background:var(--hero-bg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -252,18 +256,19 @@ span{
 }
 .hero-parent-first-text{
     margin-bottom: 20px;
+    color: #333;
 }
 .hero-title-firs-texts{
     font-family: 'Rubik', sans-serif;
     color: transparent;
-    -webkit-text-stroke: 1px var(--main-blue-color);
-    font-size: 50px;
+    -webkit-text-stroke: 1px #0594d1;
+    font-size: 44px;
     line-height: 50px;
     margin-bottom: 20px;
 }
 .hero-title {
     font-family: 'Rubik', sans-serif;
-    color: var(--main-blue-color);
+    color: #0594d1;
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 20px;
@@ -271,6 +276,7 @@ span{
 .hero-text {
     margin-bottom: 30px;
     line-height: 30px;
+    color: #333;
 }
 .contact-link{
     display: inline-block;
