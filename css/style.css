@@ -243,6 +243,14 @@ span{
 .hero-parent-first-text{
     margin-bottom: 20px;
 }
+.hero-title-firs-texts{
+    font-family: 'Rubik', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--main-blue-color);
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
 .hero-title {
     font-family: 'Rubik', sans-serif;
     color: var(--main-blue-color);
