@@ -241,10 +241,6 @@ span{
 
 .hero-section{
     background:var(--hero-bg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top center;  
 }
 .hero-parent{
     max-width: 660px;
