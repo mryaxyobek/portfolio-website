@@ -11,7 +11,8 @@
     --header-btn-first-text: inline-block;
     --header-box-shadow: 0 0 3px 0 #b7b7b7;
     --header-btn-border:3px solid #020035;
-
+    /* my team  */
+    --my-team-iteam-bg:#dfe5ec ;
 }
 html{
     cursor:url(../images/pointer-cursor.svg),default ;
@@ -33,6 +34,8 @@ a,.header-btn{
     --header-btn-first-text: none;
     --header-box-shadow: 0 0 0 2px #959595;
     --header-btn-border:3px solid #004866;
+    /* my team  */
+    --my-team-iteam-bg:#00182e ;
 }
 *{
     margin: 0;
@@ -44,14 +47,16 @@ a,.header-btn{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 12px;
     background: var(--scrollbar-color);
-    margin-block: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(transparent,var(--scrollbar-thumb-color));
     border-radius: 50px;
-    border: 2.5px solid var(--scrollbar-color);
+    border: 3px solid var(--scrollbar-color);
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 2px solid var(--scrollbar-color);
 }
 .container{
     max-width: 1240px;
@@ -73,8 +78,14 @@ a,.header-btn{
 section,footer{
     padding: 100px 0;
 }
+h2,h3,h4{
+    font-family: 'Rubik', sans-serif;
+}
 h2{
-    font-size: 36px;
+    color: var(--main-blue-color);
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -100,6 +111,7 @@ span{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 4;
     padding: 15px 0;
     background: var(--header-bg-color);
     background-repeat: no-repeat;
@@ -171,6 +183,7 @@ span{
     border-bottom: var(--header-btn-border);
     border-radius: 50px;
     transition: all 0.1s ease;
+    
 }
 .header-btn {
     padding: 10px 16px;
@@ -234,9 +247,8 @@ span{
     font-family: 'Rubik', sans-serif;
     color: var(--main-blue-color);
     font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
     line-height: 50px;
+    margin-bottom: 20px;
 }
 .hero-text {
     margin-bottom: 30px;
@@ -246,4 +258,119 @@ span{
     display: inline-block;
     height: 56.48px;
     font-size: 16px;
+}
+
+/* my team  */
+
+.my-team-section-title {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 30px;
+}  
+.my-team-section-parent {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    overflow-x:auto;
+    width: 100%;
+    padding: 20px 0;
+}
+.my-team-section-parent::-webkit-scrollbar{
+    height: 8px;
+    background: var(--scrollbar-color);
+    margin-block: 10px;
+    border-radius: 50px;
+}
+.my-team-section-parent::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg,transparent,var(--scrollbar-thumb-color));
+    border-radius: 50px;
+    border: 2px solid var(--scrollbar-color);
+}
+.my-team-section-parent::-webkit-scrollbar-thumb:hover{
+    border: 0px solid var(--scrollbar-color);
+}
+.my-team-section-parent-item {
+    width: 500px;
+    border-radius: 18px ;
+}
+.my-team-section-img-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.my-team-section-img-wrapper:hover .my-team-img-and-texts-wrapper{
+    opacity: 1;
+}
+.my-team-section-img {
+    width: 100%;
+    height: 280px;
+    filter: grayscale(0%);
+    border-radius: 18px 18px 0 0;
+}
+.my-team-section-img-and-title-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.my-team-img-and-texts-wrapper{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px 18px 0 0;
+    height: 100%;
+    width: 100%;
+    background: #00000088;
+}
+.friend-profile-img {
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-right: 4px;
+}
+.friend-name {
+    color: #fff;
+}
+.friend-portfolio-link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    transition: transform 0.4s ease;
+}
+.friend-portfolio-link:hover{
+    transform: scale(1.1);
+}
+.friend-portfolio-link:active{
+    transform: scale(1);
+}
+.friend-portfolio-link-img {
+    margin-right: 4px;
+}
+.my-team-section-item-two{
+    padding:18px;
+    background:var(--my-team-iteam-bg) ;
+    border-radius: 0 0 17px 17px ;
+}
+.my-team-items-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 20px;
+}
+.my-team-section-technologies-text {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.7;
+}
+.my-team-section-items-info-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
 }
