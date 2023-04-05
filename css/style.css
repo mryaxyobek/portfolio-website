@@ -126,27 +126,37 @@ span{
 .profile {
     display: flex;
     align-items: center;
-    transition:opacity 0.3s ease
+    transition:opacity 0.3s ease;
 }
 .profile:active{
     opacity: 0.7;
 }
-.profile-logo {
+.header-profile-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 62px;
     height: 62px;
-    border: 2px solid white;
-    border-radius: 50px;
+    margin-right: 12px;
+    transform: rotate(10deg);
+    border-radius: 14px;
+    background-color: #c7c7c7;
+}
+.profile-logo {
+    width: 56px;
+    height: 56px;
+    transform: rotate(-10deg);
+    border-radius: 12px;
     background-color: #0594d1;
-    margin-right: 8px;
 }   
 .header-title {
     font-size: 20px;
     font-family: 'Contrail One', cursive;
     color: #0594d1;
-    line-height: 22px;
+    line-height: 20px;
 }
 .header-title-wrapper-item {
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 400;
     color: var(--gray-color);
     opacity: 0.5;
