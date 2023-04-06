@@ -160,7 +160,8 @@ span{
     line-height: 20px;
 }
 .header-title-wrapper-item {
-    font-size: 9px;
+    font-size: 12px;
+    margin-left: 2px;
     font-weight: 400;
     color: var(--gray-color);
     opacity: 0.5;
